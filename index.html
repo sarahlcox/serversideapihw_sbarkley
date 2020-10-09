@@ -2,26 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Weather Dashboard | Sarah Barkley</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <section class="topbar">
-        <div class="topnav">
-            <h3>Weather Dashboard</h3>
-            <div class="search-container">
-              <form action="citysearch">
-                <input type="text input-text" placeholder="Search City..." name="search">
-                <button type="submit" id="citybutton">Search</button>
-              </form>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container" id="topbar">
+              <h1 class="display-4">Weather Dashboard</h1>
             </div>
           </div>
     </section>
-    <section class="main">
-        <div class="container" id="searchresults"></div>
 
+    <section class="main">
+        <!-- dashboard main -->
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-4'>
+                    <label for='search-for-a-city'><h4>Search for a City:</h4></label>
+                    <div class='input-group mb-3'>
+                        <input type='search' class='form-control' placeholder='Search city' id='city-search'>
+                        <div class='input-group-append'>
+                            <button class='button'id='search-input' type='button/text'>Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+
+        <!-- 5 day -->
+         
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
