@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard | Sarah Barkley</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="topbar">
+        <div class="topnav">
+            <h3>Weather Dashboard</h3>
+            <div class="search-container">
+              <form action="citysearch">
+                <input type="text input-text" placeholder="Search City..." name="search">
+                <button type="submit" id="citybutton">Search</button>
+              </form>
+            </div>
+          </div>
+    </section>
+    <section class="main">
+        <div class="container" id="searchresults"></div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
