@@ -25,9 +25,11 @@
                         <h5 class="card-header">Search for a City</h5>
                         <div class="card-body">
                           <label for="search-card">Search for a City</h5>
+                            <form action="#"  id="search-city">
+                            </form>
                             <div class='input-group mb-3'>
-                                <input type='search' class='form-control' placeholder='Search city' id='city-search'>
-                                <button class='button'id='search-input' type='button/text'>Search</button>
+                                <input name="searchbar" type='text' class='form-control' placeholder='Search City' id='user-input'>
+                                <button class='button'id='search-input' type='submit'>Search</button>
                             </div>
                         </div>
                     </div>
@@ -36,9 +38,8 @@
                     <div class="card">
                         <h5 class="card-header">Featured</h5>
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="city-name"></h5>
+                          <p class="current-info"></p>
                         </div>
                       </div>
                 </div>
@@ -48,10 +49,10 @@
         <div class='container'>
             <div class='row'>
                 <div class='col-sm-4'>
-                    <div class='input-group-append'>placeholder</div>
+                    <div class='daily-view'>placeholder</div>
                 </div>
                 <div class='col-sm-6'>
-                    <div class='forcast-append'>5 Day Forcast</div>
+                    <div class='forecast-append'>5 Day Forcast</div>
                 </div>
             </div>
         </div>
