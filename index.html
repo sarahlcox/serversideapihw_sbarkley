@@ -1,71 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Weather Dashboard | Sarah Barkley</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-</head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Weather Dashboard | Sarah Barkley</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css"> </head>
+
 <body>
-    <section class="topbar">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container" id="topbar">
-              <h1 class="display-4">Weather Dashboard</h1>
-            </div>
-          </div>
-    </section>
-
-    <section class="main">
-        <!-- dashboard main -->
-        <div class='container'>
-            <div class='row'>
-                <div class='col-sm-4'>
-                    <div class="card">
-                        <h5 class="card-header">Search for a City</h5>
-                        <div class="card-body">
-                          <label for="search-card">Search for a City</h5>
-                            <form action="#"  id="search-city">
-                            </form>
-                            <div class='input-group mb-3'>
-                                <input name="searchbar" type='text' class='form-control' placeholder='Search City' id='user-input'>
-                                <button class='button'id=search-input' type='submit'>Search</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div class="card">
-                        <h5 class="card-header">Featured</h5>
-                        <div class="card-body">
-                          <h5 class="city-name"></h5>
-                          <p class="current-info"></p>
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </div>
-
-        <div class='container'>
-            <div class='row'>
-                <div class='col-sm-4'>
-                    <div class='daily-view'>placeholder</div>
-                </div>
-                <div class='col-sm-6'>
-                    <div class='daily-view'>5 Day Forcast</div>
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-
-        <!-- 5 day -->
-         
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./script.js"></script>
+	<section class="topbar">
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container" id="topbar">
+				<h1 class="display-4">Weather Dashboard</h1> </div>
+		</div>
+	</section>
+	<section class="main">
+		<!-- dashboard main -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card">
+						<h5 class="card-header">Search for a City</h5>
+						<div class="card-body">
+							<form action="#" id="search-city"> </form>
+							<div class="input-group mb-3">
+								<input name="searchbar" type="text" class="form-control" placeholder="Search City" id="user-input">
+								<button class="btn btn-primary" id="search-button" type="submit">Search</button>
+							</div>
+							<div id="recentSearches"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-8">
+					<div class="card">
+						<h5 id="TodayTitle" class="card-header">Welcome To The Weather Dashboard</h5>
+						<div id="TodaysDetails" class="card-body"> Please search for your city using the search box to the left.
+							<br> We hope you have a day full of sunshine and rainbows!
+							<br>
+							<br>
+							<br>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div>&nbsp;</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="card">
+						<h5 class="card-header">5 Day Forcast</h5>
+						<div class="card-body">
+							<div id="five-day" class="forecast-append"> Please search for your city using the search box to the left to see a 5 day forcast.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="./script.js"></script>
 </body>
+
 </html>

@@ -141,60 +141,19 @@ function DisplayTodaysUvIndex(fiveDayObject)
 
 
 
-// //create a function to display weather for city
-//     function citydata(userCity){
-//         if (userCity === null) {
-//             $("#daily-view").empty();
-//             localStorage.getItem("userCity");
-//             pushInfo(localStorage.getItem("userCity")); 
-    
-//         }
-//         else{
-//             $("#daily-view").empty();
-//             localStorage.setItem("userAddress", userAddress)
-//             pushInfo(localStorage.getItem("userAddress")); 
-//         }
-//     }
-// })
+//
+// Load the local storage and return an array of the search history (if any)
+//
+	// Get Search History JSON list
+		// Parse the json string into an array
+	// If we don't have an array, it means there is no search history.  In this case define an empty array.
+	// Return the resulting array
+// Populates the search history html panel and make clickable
+//
 
-
-
-// function oneday(userCity){
-//1. url
-//api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-
-
-// var onedayURL = "https://api.openweathermap.org/data/2.5/weather?q="+userSearch+"&appid="+apiKey;
-// console.log(onedayURL);
-// //2. ajax
-// $.ajax(
-// {
-//     url: onedayURL,
-//     method: "GET"
-// })
-// .then(function(onedayforcast)
-// {
-//     console.log(onedayforcast);
-//     //3. get data
-//     //city, 
-//     //date, 
-//     //icon, 
-//     //temp, 
-//     //humidity, 
-//     //wind speed,
-//     //lon
-//     var lon=(onedayforcast.coord.lon);
-//     var lat=(onedayforcast.coord.lat);
-//     //lat
-//     //uv index: lon & lat => call a second ajax using lon and lat
-//     //http://api.openweathermap.org/data/2.5/uvi?lat={lat}&lon={lon}&appid={API key}
-//     var uvURL="http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid="+apiKey+"";
-//     console.log(uvURL);
-//     //ajax call
-// //4.append to html
-// });
-
-
+//
+//  Searches for a city
+//
 
 
 // oneday("chicago");
