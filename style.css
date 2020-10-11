@@ -1,8 +1,11 @@
 /* topbar */
 #topbar{
   text-align: center;    
+  color: darkslateblue;
+
 }
 
+/* 5 Day Forecast */
 .weatherDay
 {
 display: inline-block;
@@ -10,12 +13,15 @@ padding: 5px;
 margin: 5px;
 width: auto;
 text-align: center;
-background-color: #007bff;
+background-color: #9ebde8;
 color: #ffffff;
 }
 
+/* Headers of Sections */
 .card-header
 {
-background-color: #007bff47;
+background-color: darkslateblue;
+color: #ffffff;
+
 
 }
